@@ -3,11 +3,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
+ 
+
   <body>
     <!-- Navigation Menu -->
     <nav>
@@ -38,15 +41,15 @@
 
     <section>
       <div class="main-container">
-        <div class="img">
+        <div class="image">
           <img src="main.jpeg" alt="" />
         </div>
-        <div class="container">
-          <h1 data-aos="fade-left">Hey! I'm <span>Kim</span></h1>
-          <div class="typewriter">
-            I'm a <span class="typewritter-text"></span>
-            <label for="">|</label>
-          </div>
+        <div class="content">
+          <h1 data-aos="fade-left">Hey! I'm <span>Kim</span>, an aspiring</h1>
+
+          <div class="glitch" id="glitch-text" data-text=""></div>
+
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             cupiditate natus nostrum sint porro odit quia rem doloribus, earum
@@ -57,7 +60,6 @@
             <a href=""><i class="fa-brands fa-github"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
           </div>
           <div class="btn">
@@ -148,8 +150,75 @@
 
     <!-- Services Section -->
      <section class="services" id="services">
-
+      <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Web Development</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quas mollitia tempora repellendus iste sapiente ullam quae, pariatur reprehenderit, delectus itaque earum consequatur? Repudiandae deserunt, quidem autem atque sapiente omnis.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="topic">Mobile Development</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quas mollitia tempora repellendus iste sapiente ullam quae, pariatur reprehenderit, delectus itaque earum consequatur? Repudiandae deserunt, quidem autem atque sapiente omnis.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">UI/UX Design</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quas mollitia tempora repellendus iste sapiente ullam quae, pariatur reprehenderit, delectus itaque earum consequatur? Repudiandae deserunt, quidem autem atque sapiente omnis.</p>
+        </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="topic">Software Development</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quas mollitia tempora repellendus iste sapiente ullam quae, pariatur reprehenderit, delectus itaque earum consequatur? Repudiandae deserunt, quidem autem atque sapiente omnis.</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">SEO Optimization</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quas mollitia tempora repellendus iste sapiente ullam quae, pariatur reprehenderit, delectus itaque earum consequatur? Repudiandae deserunt, quidem autem atque sapiente omnis.</p>
+      </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <div class="topic">Cloud Services</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quas mollitia tempora repellendus iste sapiente ullam quae, pariatur reprehenderit, delectus itaque earum consequatur? Repudiandae deserunt, quidem autem atque sapiente omnis.</p>
+          </div>
+        </div>  
      </section>
 
+    <!-- Contact Section -->
+     <section class="contact" id="contact">
+      <div class="content">
+        <div class="title">
+          <span>Contact Me</span>
+        </div>
+        <div class="text">
+          <div class="topic">Have Any Project?</div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat officia, illum facere soluta voluptates reiciendis repellendus dolore, nemo eaque at ipsam quas ratione non laudantium voluptate, deserunt ipsa asperiores eveniet.</p>
+          <div class="button">
+            <button>Let's Chat</button>
+          </div>
+        </div>
+      </div>
+     </section>
+
+
+    <!-- Footer Section -->
+     <footer>
+      <div class="text"><span>Created By <a href="">Kim Enorme</a>&#169; 2025 All Rights Reserved</span></div>
+     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
