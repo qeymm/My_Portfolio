@@ -1,3 +1,13 @@
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
+
 // Mobile Menu Toggle
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
@@ -27,15 +37,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Sticky Navigation
-// window.addEventListener("scroll", () => {
-//   const navbar = document.getElementById("navbar");
-//   if (window.scrollY > 100) {
-//     navbar.style.padding = "1rem 0";
-//     navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
-//   } else {
-//     navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
-//   }
-// });
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 100) {
+    // navbar.style.padding = "1rem 0";
+    navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+  } else {
+    navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
+  }
+});
 
 // Form Submission (Demo)
 const contactForm = document.getElementById("contactForm");

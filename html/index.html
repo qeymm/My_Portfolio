@@ -8,25 +8,57 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav id="navbar">
-      <div class="container">
-        <h1 class="logo"><a href="#hero">Kim Enorme</a></h1>
-        <div class="menu-btn">☰</div>
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#f9fbfb"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- <h1 class="logo"><a href="#hero">Kim Enorme</a></h1> -->
+      <ul class="navbar container">
+        <li><a href="#hero">Home</a></li>
+        <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+        <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#education">Education</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        <li class="menu-btn" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#f9fbfb"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero">
       <div class="container hero-content">
         <div class="hero-text">
-          <h1>Hi, I'm <span>Your Name</span></h1>
+          <h1>Hi, I'm <span>Kim Enorme</span></h1>
           <p>
             I'm a passionate web developer specializing in creating beautiful
             and functional websites. With a focus on user experience and clean
